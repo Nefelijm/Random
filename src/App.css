@@ -34,3 +34,10 @@
  margin-top: 5%;
  border: 1px solid black;
 }
+.main-css{
+  background-repeat: no-repeat;
+  background-image: url('https://www.frogx3.com/wp-content/uploads/2010/04/secrets.jpg');
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+}

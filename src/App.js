@@ -7,25 +7,24 @@ class App extends Component {
     const words = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Setiembre", "Octubre", "Noviembre", "Diciembre"]
     let wordsRandom = words[Math.round(Math.random() * words.length)];
       console.log(wordsRandom);
-    const color = ["red", "blue", "yellow", "green", "orange", "blueviolet", "lawngreen", "", "mediumpurple", "palevioletred", "palegoldenrod"]
+    const color = ["red", "blue", "yellow", "green", "orange", "blueviolet", "lawngreen", "mediumpurple", "palevioletred", "palegoldenrod","aqua","pink"]
     let colorRandom = color[Math.round(Math.random() * color.length)];
     console.log(colorRandom);
     let liStyle = { background: colorRandom };
     
     
     return (
-      <div className="App">
+      <div className="App main-css">
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
           <h1 className="App-title">BIENVENIDOS A REACT</h1>
           <h2 >Meses del Año</h2>          
         </header>
-        <main>
+        <div >
           <div className="Random-cards" style={liStyle}>
             <p>{wordsRandom}</p>
           </div>
-        </main>
-
+        </div>
       </div>
       
     );
