@@ -3,11 +3,14 @@ import logo from './logo.svg';
 import './App.css';
 
 class App extends Component {
-  render() {
- 
-      const words = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Setiembre", "Octubre", "Noviembre", "Diciembre"]
+  render() {      
+    const words = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Setiembre", "Octubre", "Noviembre", "Diciembre"]
     let wordsRandom = words[Math.round(Math.random() * words.length)];
       console.log(wordsRandom);
+    const color = ["red", "blue", "yellow", "green", "orange", "blueviolet", "lawngreen", "", "mediumpurple", "palevioletred", "palegoldenrod"]
+    let colorRandom = color[Math.round(Math.random() * color.length)];
+    console.log(colorRandom);
+    let liStyle = { background: colorRandom };
     
     
     return (
@@ -18,7 +21,7 @@ class App extends Component {
           <h2 >Meses del Año</h2>          
         </header>
         <main>
-          <div className="Random-cards">
+          <div className="Random-cards" style={liStyle}>
             <p>{wordsRandom}</p>
           </div>
         </main>
